@@ -1,0 +1,46 @@
+@grey: gray; 
+@bodyColor: darken(@grey, 30%);
+@darkBorderColor: lighten(@grey, 20%);
+@lightBorderColor: lighten(@grey, 30%);
+@headerOffset: 60px;
+
+body {
+	padding-top: @headerOffset;
+	color: @bodyColor;
+}
+
+h2 {
+	font-size: 31px;
+	padding-top: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top-style: solid;
+	border-top-width: 5px;
+	border-color: @darkBorderColor;
+}
+
+h3 {
+	font-size: 24px;
+	padding-top: 5px;
+	margin-top: 5px;
+	border-top-style: solid;
+	border-top-width: 3px;
+	border-color: @lightBorderColor;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+// adjusts anchor location to account for the fixed header
+a.anchor{
+	display: block;
+	position: relative;
+	top: -@headerOffset;
+	visibility: hidden;
+}
+
+// see http://stackoverflow.com/a/14495095/295797
+.affix,.navbar-fixed-top{
+	-webkit-transform: scale3d(1,1,1);
+}
