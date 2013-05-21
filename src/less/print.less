@@ -1,8 +1,4 @@
-.navbar {
-	display: none;
-}
-
-#anchorSpacer {
+.dontPrint {
 	display: none;
 }
 
@@ -10,4 +6,10 @@
 {
   margin-left: 2cm;
   margin-right: 2cm;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
 }
