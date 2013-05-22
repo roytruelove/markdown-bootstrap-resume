@@ -1,4 +1,5 @@
 {
+    "name": "markdown-bootstrap-resume",
     "devDependencies": {
         "grunt": "0.4.1",
         "coffee-script": "1.6.2",
