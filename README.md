@@ -25,10 +25,12 @@ This particular project is built on top of Bootswatch's [Cosmo](http://bootswatc
 
 ### Credits
 
-This project leverages the following fantastic projects:
+Leverages the following fantastic projects:
 
 * [Markdown](http://daringfireball.net/projects/markdown/)
 * [Twitter Bootstrap](http://twitter.github.io/bootstrap/index.html)
 * [Strapdown.js](http://strapdownjs.com/)
 * [Bootswatch](http://bootswatch.com/)
 * [LESS](http://lesscss.org/)
+
+Thanks!
