@@ -5,25 +5,25 @@
 <body>
 <div class="navbar navbar-fixed-top dontPrint">
 	<div class="navbar-inner">
-		<ul class="nav">
-			<li class="active"><a href="#">Top</a></li>
+		<ul class="nav smooth-scroll">
+			<li class="active"><a href="#top">Top</a></li>
+			<li><a href="#summary">Summary</a>
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Experience<b class="caret"></b></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Experience
+					<b class="caret"></b>
+				</a>
 				<ul class="dropdown-menu">
-					<li><a href="#current">Current</a></li>
-					<li><a href="#2013">2013</a></li>
-					<li><a href="#2012">2012</a></li>
-					<li><a href="#2011">2011</a></li>
-					<li><a href="#2010">2010</a></li>
-					<li><a href="#2009">2009</a></li>
-					<li><a href="#earlier">Earlier</a></li>
+					<li class="nav-header">Awesome Company (September 2012 - Present)</li>
+					<li><a href="#ac1">Java Software Developer</a></li>
+					<li class="nav-header">Another Awesome Company (September 2010 - September 2012)</li>
+					<li><a href="#aac1">C++ Software Developer</a></li>
 				</ul>
-				</li>
+			</li>
 			<li><a href="#technologies">Technologies</a></li>
 			<li><a href="#personalProjects">Personal Projects</a></li>
 			<li><a href="#community">Community</a></li>
 			<li><a href="#education">Education</a></li>
-			<li><a href="#etc">etc</a></li>
 		</ul>
 		<ul class="nav pull-right">
 			<li style="float: right;"><A HREF="javascript:window.print()"><i class="icon-print icon-white"></i></A></li>
@@ -31,21 +31,33 @@
 	</div>
 </div>
 <xmp style="display:none;">
+<a class="anchor" id="top"></a>
 Jane Programmer
 ===============
 
 [janeprogrammer@gmail.com](mailto:janeprogrammer@gmail.com)  
 +1 347-555-1234
+<div class='justPrint'>
+http://yourdomain.com/cv (Recommended Format)
+</div>
 
-<a class="anchor" id="current"></a>
+<a class="anchor" id="summary"></a>
+Summary
+-------
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, purus lacinia egestas cursus, enim nisl interdum risus, ac varius justo quam a est. Aenean lacus lorem, vulputate non rhoncus sit amet, rutrum eu ipsum. In non tortor enim. Suspendisse nulla libero, elementum ut pretium at, elementum tempor tortor. Aliquam fringilla nisl non velit tincidunt vel consectetur libero dignissim.
+
+Cras rhoncus aliquam nulla vel vestibulum. Nam fringilla pellentesque ligula a rhoncus. Aliquam id suscipit diam. Aenean eu eros leo. Donec sollicitudin, mi id cursus laoreet, est massa imperdiet enim, ut elementum ipsum justo in nunc. Aliquam sed massa felis, non iaculis diam. Morbi eget ipsum lectus.
+
+In dolor quam, sollicitudin eget rhoncus a, congue id sem. Proin et neque magna. In non leo ligula, in sodales ante. Sed nulla leo, porttitor ut sollicitudin quis, tincidunt non eros. Ut congue, turpis nec sollicitudin porttitor, nisi risus gravida felis, quis tempus neque elit sed nulla. Cras et egestas dui. Nam ut mi nulla, a rutrum nisi. Nulla facilisi. Integer ac lorem quis sem ultricies scelerisque. Nulla varius lacinia aliquet.
+
 Experience
 ----------
 
-<a class="anchor" id="2013"></a>
-<a class="anchor" id="2012"></a>
-### Software Developer
+<a class="anchor" id="ac1"></a>
+### Java Software Developer
 
-*Awesome Company - September 2012 - Current*  
+*Awesome Company - (September 2012 - Present)*  
 Technologies: `angularjs`, `twitter-bootstrap`, `coffeescript`, `javascript`
 
 #### Background
@@ -60,10 +72,10 @@ Technologies: `angularjs`, `twitter-bootstrap`, `coffeescript`, `javascript`
 * Suspendisse a risus ac nulla venenatis malesuada sit amet in ligula.
 * Nulla quis libero libero, sit amet gravida urna.
 
-### Software Developer
+<a class="anchor" id="aac1"></a>
+### C++ Software Developer
 
-<a class="anchor" id="2012"></a>
-*Another awesome Company - September 2010 - September 2012*  
+*Another awesome Company (September 2010 - September 2012)*  
 Technologies: `angularjs`, `twitter-bootstrap`, `coffeescript`, `javascript`
 
 #### Background
@@ -133,12 +145,6 @@ Education
 
 * Dean's List
 
-<a class="anchor" id="etc"></a>
-Etc
----------
-
-*Anything here??*
-
 </xmp>
 <p class="text-center dontPrint">
 	<small>Created with <a href="https://github.com/roytruelove/markdown-bootstrap-resume">markitdown-bootstrap-resume</a></small>
@@ -148,7 +154,9 @@ Etc
 </body>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.js"></script>
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<script src="js/strapdown.js"></script>
+<script src="js/scrolling.js"></script>
+
 <link href="style/bootstrap-cosmo.min.css" rel="stylesheet">
 <link href="style/resume.css" rel="stylesheet" media='screen,print'>
 <link href="style/print.css" rel="stylesheet" media='print'>

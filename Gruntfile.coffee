@@ -19,6 +19,12 @@ module.exports = (grunt)->
 						expand: 				true
 						dest: 					'artifacts'
 					}
+					{
+						cwd: 					'src/js'
+						src:					'*.js'
+						expand: 				true
+						dest: 				'artifacts/js'
+					}
 				]
 			lib:
 				files: [
@@ -36,6 +42,13 @@ module.exports = (grunt)->
 						dest: 				'artifacts/img'
 						flatten: 			true
 					}
+					{
+						cwd: 					'lib'
+						src:					'**/*.js'
+						expand: 				true
+						dest: 				'artifacts/js'
+						flatten: 			true
+					}
 				]
 		less:
 			all:
@@ -50,6 +63,14 @@ module.exports = (grunt)->
 					}
 				]
 
+		'sftp-deploy':
+			dist:
+				auth:
+					host: 'www.yourdomain.com'
+					authKey: 'standard'
+					port: 22
+				src: 'artifacts/'
+				dest: '/somewhere/cv'
 		regarde:
 			all:
 				files: ['src/**/*.*']
@@ -62,8 +83,10 @@ module.exports = (grunt)->
 	grunt.loadNpmTasks('grunt-contrib-copy')
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-regarde')
+	grunt.loadNpmTasks('grunt-sftp-deploy')
 
 	grunt.registerTask('build', ['copy', 'less'])
 	grunt.registerTask('watch', ['regarde'])
 
 	grunt.registerTask('default', ['clean','build', 'watch'])
+	grunt.registerTask('dist', ['build', 'sftp-deploy'])
