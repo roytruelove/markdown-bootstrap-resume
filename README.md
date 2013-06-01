@@ -15,7 +15,11 @@ Create your resume / cv like a NERD. I mean, like a BOSS - using [Markdown](http
 * Point your browser to the `artifact` directory created by the build
 * Make changes, refresh your browser
 
-Content changes should be made in `resume.html`, style changes in `resume.less`
+Content changes should be made in `index.html`, style changes in `resume.less`
+
+### Deploying
+
+The `grunt deploy` task will push your resume and its supporting files to a server over SFTP (other types of deployments you'll have to handle on your own).  See the [grunt-sftp-deploy](https://github.com/thrashr888/grunt-sftp-deploy) for configuration information, and edit your `Gruntfile.coffee` appropriately.
 
 ### Etc
 

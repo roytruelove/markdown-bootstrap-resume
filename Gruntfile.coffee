@@ -64,7 +64,7 @@ module.exports = (grunt)->
 				]
 
 		'sftp-deploy':
-			dist:
+			deploy:
 				auth:
 					host: 'www.yourdomain.com'
 					authKey: 'standard'
@@ -89,4 +89,4 @@ module.exports = (grunt)->
 	grunt.registerTask('watch', ['regarde'])
 
 	grunt.registerTask('default', ['clean','build', 'watch'])
-	grunt.registerTask('dist', ['build', 'sftp-deploy'])
+	grunt.registerTask('deploy', ['build', 'sftp-deploy'])
