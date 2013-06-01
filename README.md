@@ -23,7 +23,7 @@ The `grunt deploy` task will push your resume and its supporting files to a serv
 
 ### Etc
 
-This particular project is built on top of Bootswatch's [Cosmo](http://bootswatch.com/cosmo/) theme.  Feel free to change the `lib/boostrap/bootstrap.*.min.css` to whatever theme you like.
+This particular project is built on top of Bootswatch's [Cosmo](http://bootswatch.com/cosmo/) theme.  Feel free to change the `lib/boostrap/bootstrap.*.min.css` to whatever theme you like.  Checkout [bootswatch](http://bootswatch.com) as well as [BootstrapTheme's Resume / CV section](http://bootstrapthemes.com/resume-and-cv/) for some ideas.
 
 *Please note that this is an attempt to demonstrate resume / cv best practices, etc. Format / populate your resume as needed.*
 
